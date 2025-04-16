@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Auto Click Config</title>
+</head>
+
+<body>
+    <h3>Auto Click Settings</h3>
+    <label>Inactivity Time (seconds):</label>
+    <input type="number" id="inactivityTime" value="60" /><br />
+    <label>Target Button Selector:</label>
+    <input type="text" id="buttonSelector" placeholder="#refresh-btn" /><br />
+    <button id="save">Save</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Auto Button Clicker</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 10px;
+            width: 250px;
+        }
+
+        input,
+        button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Auto Click Settings</h3>
+    <label>Inactivity Time (sec)</label>
+    <input id="inactivityTime" type="number" min="1" value="10" />
+    <label>Selected Button</label>
+    <input id="buttonSelector" placeholder="Click Pick Button" disabled />
+    <button id="pickButton">Pick Button</button>
+    <button id="saveButton">Save Settings</button>
+    <script src="popup.js"></script>
+</body>
+
+</html>

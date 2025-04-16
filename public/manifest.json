@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Clicker on Inactivity",
+    "version": "1.0",
+    "description": "Clicks a target button after user inactivity",
+    "permissions": ["scripting", "storage", "activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
+    "host_permissions": ["<all_urls>"]
+  }
+  
